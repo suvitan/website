@@ -24,12 +24,12 @@ jQuery(document).ready(function(){
 	grax_tm_anchor();
 	grax_tm_down();
 	grax_tm_hamburger();
-	grax_tm_cursor();
-	grax_tm_imgtosvg();
-	grax_tm_popup();
-	grax_tm_data_images();
-	grax_tm_contact_form();
-	grax_tm_parallax_effect();
+	// grax_tm_cursor();
+	// grax_tm_imgtosvg();
+	// grax_tm_popup();
+	// grax_tm_data_images();
+	// grax_tm_contact_form();
+	// grax_tm_parallax_effect();
 	grax_tm_totop();
 	
 	jQuery(window).load('body', function(){
