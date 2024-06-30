@@ -4,6 +4,14 @@
  * This file is made for CURRENT TEMPLATE
 */
 
+window.onerror = function(message, source, lineno, colno, error) {
+    console.error("Error message:", message);
+    console.error("Source:", source);
+    console.error("Line number:", lineno);
+    console.error("Column number:", colno);
+    console.error("Error object:", error);
+};
+
 
 jQuery(document).ready(function(){
 
@@ -11,25 +19,25 @@ jQuery(document).ready(function(){
 	
 	// here all ready functions
 	
-	// grax_tm_modalbox_news();
-	// grax_tm_popupscroll();
-	// grax_tm_ripple();
-	// grax_tm_color_switcher();
-	// grax_tm_switcher_opener();
-	// grax_tm_cursor_switcher();
-	// grax_tm_videoplayer();
+	grax_tm_modalbox_news();
+	grax_tm_popupscroll();
+	grax_tm_ripple();
+	grax_tm_color_switcher();
+	grax_tm_switcher_opener();
+	grax_tm_cursor_switcher();
+	grax_tm_videoplayer();
 	grax_tm_hero_title();
 	grax_tm_wavefy();
 	grax_tm_nav_bg();
 	grax_tm_anchor();
 	grax_tm_down();
 	grax_tm_hamburger();
-	// grax_tm_cursor();
-	// grax_tm_imgtosvg();
-	// grax_tm_popup();
-	// grax_tm_data_images();
-	// grax_tm_contact_form();
-	// grax_tm_parallax_effect();
+	grax_tm_cursor();
+	grax_tm_imgtosvg();
+	grax_tm_popup();
+	grax_tm_data_images();
+	grax_tm_contact_form();
+	grax_tm_parallax_effect();
 	grax_tm_totop();
 	
 	jQuery(window).load('body', function(){
