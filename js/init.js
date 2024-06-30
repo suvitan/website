@@ -11,20 +11,20 @@ jQuery(document).ready(function(){
 	
 	// here all ready functions
 	
-	grax_tm_modalbox_news();
-	grax_tm_popupscroll();
-	grax_tm_ripple();
-	grax_tm_color_switcher();
-	grax_tm_switcher_opener();
-	grax_tm_cursor_switcher();
-	grax_tm_videoplayer();
+	// grax_tm_modalbox_news();
+	// grax_tm_popupscroll();
+	// grax_tm_ripple();
+	// grax_tm_color_switcher();
+	// grax_tm_switcher_opener();
+	// grax_tm_cursor_switcher();
+	// grax_tm_videoplayer();
 	grax_tm_hero_title();
 	grax_tm_wavefy();
 	grax_tm_nav_bg();
 	grax_tm_anchor();
 	grax_tm_down();
 	grax_tm_hamburger();
-	// grax_tm_cursor();
+	grax_tm_cursor();
 	grax_tm_imgtosvg();
 	grax_tm_popup();
 	grax_tm_data_images();
@@ -455,27 +455,27 @@ function grax_tm_hamburger(){
 // ------------------   CURSOR    ----------------------
 // -----------------------------------------------------
 
-// function grax_tm_cursor(){
-//     "use strict";
+function grax_tm_cursor(){
+    "use strict";
 	
-// 	var myCursor	= jQuery('.mouse-cursor');
+	var myCursor	= jQuery('.mouse-cursor');
 	
-// 	if(myCursor.length){
-// 		if ($("body")) {
-//         const e = document.querySelector(".cursor-inner"),
-//             t = document.querySelector(".cursor-outer");
-//         let n, i = 0,
-//             o = !1;
-//         window.onmousemove = function (s) {
-//             o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)", n = s.clientY, i = s.clientX
-//         }, $("body").on("mouseenter", "a, .cursor-pointer", function () {
-//             e.classList.add("cursor-hover"), t.classList.add("cursor-hover")
-//         }), $("body").on("mouseleave", "a, .cursor-pointer", function () {
-//             $(this).is("a") && $(this).closest(".cursor-pointer").length || (e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover"))
-//         }), e.style.visibility = "visible", t.style.visibility = "visible"
-//     }
-// 	}
-// };
+	if(myCursor.length){
+		if ($("body")) {
+        const e = document.querySelector(".cursor-inner"),
+            t = document.querySelector(".cursor-outer");
+        let n, i = 0,
+            o = !1;
+        window.onmousemove = function (s) {
+            o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)", n = s.clientY, i = s.clientX
+        }, $("body").on("mouseenter", "a, .cursor-pointer", function () {
+            e.classList.add("cursor-hover"), t.classList.add("cursor-hover")
+        }), $("body").on("mouseleave", "a, .cursor-pointer", function () {
+            $(this).is("a") && $(this).closest(".cursor-pointer").length || (e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover"))
+        }), e.style.visibility = "visible", t.style.visibility = "visible"
+    }
+	}
+};
 
 // -----------------------------------------------------
 // ---------------    IMAGE TO SVG    ------------------
@@ -664,17 +664,17 @@ jQuery('.kioto_progress').each(function() {
 // -------------  GLITCH  --------------------------
 // -------------------------------------------------
 
-// $(".glitch").mgGlitch({
-// 	destroy: false,
-// 	glitch: true,
-// 	scale: true,
-// 	blend: true,
-// 	blendModeType: "hue",
-// 	glitch1TimeMin: 200,
-// 	glitch1TimeMax: 400,
-// 	glitch2TimeMin: 10,
-// 	glitch2TimeMax: 100
-// });
+$(".glitch").mgGlitch({
+	destroy: false,
+	glitch: true,
+	scale: true,
+	blend: true,
+	blendModeType: "hue",
+	glitch1TimeMin: 200,
+	glitch1TimeMax: 400,
+	glitch2TimeMin: 10,
+	glitch2TimeMax: 100
+});
 
 function grax_tm_progress_line(){
 	
