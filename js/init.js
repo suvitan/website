@@ -12,7 +12,7 @@ jQuery(function ($) {
   // here all ready functions
 
   grax_tm_modalbox_news();
-  grax_tm_popupscroll();
+  // grax_tm_popupscroll();
   grax_tm_ripple();
   grax_tm_color_switcher();
   grax_tm_switcher_opener();
@@ -558,11 +558,11 @@ function grax_tm_popup() {
 // --------------------    WOW JS    -------------------
 // -----------------------------------------------------
 
-wow = new WOW({
-  animateClass: "animated",
-  offset: 10,
-});
-wow.init();
+// wow = new WOW({
+//   animateClass: "animated",
+//   offset: 10,
+// });
+// wow.init();
 
 // -----------------------------------------------------
 // ---------------   DATA IMAGES    --------------------
