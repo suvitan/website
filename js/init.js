@@ -9,38 +9,41 @@ jQuery(function ($) {
   console.log("DOM is ready");
   ("use strict");
 
-  // here all ready functions
+  setTimeout(() => {
+    console.log("timeout done");
+    // here all ready functions
 
-  grax_tm_modalbox_news();
-  grax_tm_popupscroll();
-  grax_tm_ripple();
-  grax_tm_color_switcher();
-  grax_tm_switcher_opener();
-  grax_tm_cursor_switcher();
-  grax_tm_videoplayer();
-  grax_tm_hero_title();
-  grax_tm_wavefy();
-  grax_tm_nav_bg();
-  grax_tm_anchor();
-  grax_tm_down();
-  grax_tm_hamburger();
-  grax_tm_cursor();
-  // grax_tm_imgtosvg();
-  grax_tm_popup();
-  grax_tm_data_images();
-  grax_tm_contact_form();
-  grax_tm_parallax_effect();
-  grax_tm_totop();
-
-  jQuery(window).load("body", function () {
-    grax_tm_my_load();
-  });
-  jQuery(window).on("resize", function () {
     grax_tm_modalbox_news();
-  });
-  jQuery(window).on("scroll", function () {
-    grax_tm_progress_line();
-  });
+    grax_tm_popupscroll();
+    grax_tm_ripple();
+    grax_tm_color_switcher();
+    grax_tm_switcher_opener();
+    grax_tm_cursor_switcher();
+    grax_tm_videoplayer();
+    grax_tm_hero_title();
+    grax_tm_wavefy();
+    grax_tm_nav_bg();
+    grax_tm_anchor();
+    grax_tm_down();
+    grax_tm_hamburger();
+    grax_tm_cursor();
+    grax_tm_imgtosvg();
+    grax_tm_popup();
+    grax_tm_data_images();
+    grax_tm_contact_form();
+    grax_tm_parallax_effect();
+    grax_tm_totop();
+
+    jQuery(window).load("body", function () {
+      grax_tm_my_load();
+    });
+    jQuery(window).on("resize", function () {
+      grax_tm_modalbox_news();
+    });
+    jQuery(window).on("scroll", function () {
+      grax_tm_progress_line();
+    });
+  }, 3000);
 });
 
 // -----------------------------------------------------
