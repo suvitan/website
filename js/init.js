@@ -25,7 +25,7 @@ jQuery(function ($) {
   grax_tm_down();
   grax_tm_hamburger();
   grax_tm_cursor();
-  grax_tm_imgtosvg();
+  // grax_tm_imgtosvg();
   grax_tm_popup();
   grax_tm_data_images();
   grax_tm_contact_form();
