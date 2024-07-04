@@ -1055,7 +1055,7 @@ h6 {
     transition: all 0.3s ease;
 }
 .grax_tm_portfolio ul li .list_inner:hover .overlay {
-    opacity: 1;
+    opacity: 0.4;
     visibility: visible;
 }
 .grax_tm_portfolio .details {
@@ -2560,6 +2560,9 @@ body.dark .grax_tm_settings .cursor li .svg,
         padding-left: 20px;
         margin-bottom: 20px;
     }
+    .grax_tm_portfolio ul li {
+        width: 50%;
+    }
     .grax_tm_news .news_list ul {
         margin-left: -30px;
     }
@@ -2585,9 +2588,6 @@ body.dark .grax_tm_settings .cursor li .svg,
     .grax_tm_about .right .list ul li {
         width: 100%;
         padding-left: 0px;
-    }
-    .grax_tm_portfolio ul li {
-        width: 50%;
     }
     .grax_tm_progress_part .part_inner {
         display: block;
@@ -2660,6 +2660,13 @@ body.dark .grax_tm_settings .cursor li .svg,
         padding-left: 0px;
     }
 }
+
+@media (max-width: 600px) {
+    .grax_tm_portfolio ul li {
+        width: 100%;
+    }
+}
+
 @media (max-width: 480px) {
     .grax_tm_hero .name {
         font-size: 30px;
@@ -2701,4 +2708,8 @@ body.dark .grax_tm_settings .cursor li .svg,
 
 .book-a-call-btn {
     margin-top: 24px;
+}
+
+.list_inner .image iframe {
+    min-width: 100px !important;
 }
