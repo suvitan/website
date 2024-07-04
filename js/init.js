@@ -13,7 +13,7 @@ jQuery(function ($) {
 
   grax_tm_modalbox_news();
   // grax_tm_popupscroll();
-  grax_tm_ripple();
+  // grax_tm_ripple();
   grax_tm_color_switcher();
   grax_tm_switcher_opener();
   grax_tm_cursor_switcher();
@@ -676,17 +676,17 @@ function tdProgress(container) {
   });
 }
 
-jQuery(".kioto_progress").each(function () {
-  "use strict";
+// jQuery(".kioto_progress").each(function () {
+//   "use strict";
 
-  var pWrap = jQuery(this);
-  pWrap.waypoint({
-    handler: function () {
-      tdProgress(pWrap);
-    },
-    offset: "90%",
-  });
-});
+//   var pWrap = jQuery(this);
+//   pWrap.waypoint({
+//     handler: function () {
+//       tdProgress(pWrap);
+//     },
+//     offset: "90%",
+//   });
+// });
 
 // -------------------------------------------------
 // -------------  GLITCH  --------------------------
