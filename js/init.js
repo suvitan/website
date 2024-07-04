@@ -247,7 +247,7 @@ jQuery(function ($) {
     setTimeout(function () {
       $(".grax_tm_topbar").addClass("opened");
       $(".grax_tm_down").addClass("opened");
-    }, a + wait);
+    }, 800);
   }
 
   function preloader() {
@@ -259,10 +259,12 @@ jQuery(function ($) {
     var preloader = $("#preloader");
 
     if (!isMobile) {
+      // setTimeout(function () {
+      //   preloader.addClass("preloaded");
+      // }, 800);
+      preloader.addClass("preloaded");
       setTimeout(function () {
-        preloader.addClass("preloaded");
-      }, 800);
-      setTimeout(function () {
+        console.log("remove");
         preloader.remove();
       }, 2000);
     } else {
@@ -353,7 +355,7 @@ jQuery(function ($) {
   });
 
   // Window load event
-  $(window).on("load", function () {
+  $(document).ready(function () {
     preloader();
     heroTitleFade();
     $(".grax_tm_down").addClass("loaded");
