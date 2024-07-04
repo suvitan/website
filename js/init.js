@@ -561,11 +561,11 @@ function grax_tm_popup() {
 // --------------------    WOW JS    -------------------
 // -----------------------------------------------------
 
-wow = new WOW({
-  animateClass: "animated",
-  offset: 10,
-});
-wow.init();
+// wow = new WOW({
+//   animateClass: "animated",
+//   offset: 10,
+// });
+// wow.init();
 
 // -----------------------------------------------------
 // ---------------   DATA IMAGES    --------------------
@@ -695,17 +695,17 @@ jQuery(".kioto_progress").each(function () {
 // -------------  GLITCH  --------------------------
 // -------------------------------------------------
 
-$(".glitch").mgGlitch({
-  destroy: false,
-  glitch: true,
-  scale: true,
-  blend: true,
-  blendModeType: "hue",
-  glitch1TimeMin: 200,
-  glitch1TimeMax: 400,
-  glitch2TimeMin: 10,
-  glitch2TimeMax: 100,
-});
+// $(".glitch").mgGlitch({
+//   destroy: false,
+//   glitch: true,
+//   scale: true,
+//   blend: true,
+//   blendModeType: "hue",
+//   glitch1TimeMin: 200,
+//   glitch1TimeMax: 400,
+//   glitch2TimeMin: 10,
+//   glitch2TimeMax: 100,
+// });
 
 function grax_tm_progress_line() {
   "use strict";
